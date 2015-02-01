@@ -10,95 +10,9 @@
 	<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link href="css/custom.css" rel="stylesheet" type="text/css">
 	<style type="text/css">
 	
-		body {
-
-		}
-		
-		a .icon {
-			text-decoration: none;
-		}
-		
-		.icon-bar {
-			text-align: center;
-		}
-		
-		.jumbotron .icon {
-			background-color: #2F5168; 
-			color: white;
-		}
-		
-		.jumbotron .icon:hover {
-			color: #2F5168;
-			background-color: white;
-		}
-
-		.jumbotron {
-			background-color: #8edc9d;
-			margin-bottom:  0px;
-		}
-		
-		.jumbotron h1, .jumbotron p {
-			font-family: 'Poiret One', sans-serif;
-			color: white;
-			text-transform: uppercase;
-			text-align: center;
-		}
-		
-		#sub-header ul {
-			margin: 0px;
-		}
-
-		#sub-header li {
-			font-family: 'Poiret One', sans-serif;
-			font-weight: bold;
-			text-transform: uppercase;
-			text-align:center;
-			margin: 0px;
-		}
-
-		#sub-header a {
-			color: white;
-			text-decoration: none;
-		}
-		
-		#sub-header .col-md-4 {
-			padding: 25px 0px;
-			font-size: 2rem;
-		}
-
-		#sub-header .col-md-4:first-child, #profile-about {
-			background-color: #f97d81;
-		}
-
-		#sub-header .col-md-4:nth-child(2), #profile-courses {
-			background-color: #8edc9d;
-		}
-
-		#sub-header .col-md-4:nth-child(3), #profile-projects {
-			background-color: #2F5168;
-		}
-		
-		#active-profile {
-			font-family: 'Raleway', sans-serif;
-			color: white;
-			text-align: center;
-		}
-		
-		#active-profile h2 {
-			font-family: 'Poiret One', sans-serif;
-		}
-		
-		.profiles {
-			padding-bottom: 50px;
-		}
-		
-		.footer {
-			font-family: 'Raleway', sans-serif;
-			color: white;
-		}
-		
 	</style>
   </head>
   
@@ -299,87 +213,9 @@
     <script src="http://code.jquery.com/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery-1.11.2.js"></script>
+	<script src="js/custom.js"></script>
 	<script type="text/javascript">
-		var main = function() {
 		
-			var shItem1 = '#sub-header .col-md-4:first-child';
-			var shItem2 = '#sub-header .col-md-4:nth-child(2)';
-			var shItem3 = '#sub-header .col-md-4:nth-child(3)';
-			var shItemLink = ' li>a';
-			
-			var about = '#profile-about';
-			var courses = '#profile-courses';
-			var projects = '#profile-projects';
-		
-			var green = $(shItem2).css('background-color');
-			var pink =  $(shItem1).css('background-color');
-			var blue =  $(shItem3).css('background-color');
-			var grey = '#e3dfd7';
-			
-			
-			$(courses).hide();
-			$(projects).hide();
-			
-			bodyColor(pink);
-			
-			
-			$(shItem1).hover(function() {
-				$(shItem1).css('background-color', 'white');
-				$(shItem1 + shItemLink).css('color', pink);
-			}, function() {
-				$(shItem1).css('background-color', pink);
-				$(shItem1 + shItemLink).css('color', 'white');
-			});
-			
-			$(shItem2).hover(function() {
-				$(shItem2).css('background-color', 'white');
-				$(shItem2 + shItemLink).css('color', green);
-			}, function() {
-				$(shItem2).css('background-color', green);
-				$(shItem2 + shItemLink).css('color', 'white');
-			});
-			
-			$(shItem3).hover(function() {
-				$(shItem3).css('background-color', 'white');
-				$(shItem3 + shItemLink).css('color', blue);
-			}, function() {
-				$(shItem3).css('background-color', blue);
-				$(shItem3 + shItemLink).css('color', 'white');
-			});
-			
-			$(shItem1).click(function() {
-			
-				$('.profiles').slideUp();
-				$('#profile-about').slideDown();
-				bodyColor(pink);
-				
-			});
-			
-			$(shItem2).click(function() {
-			
-				$('.profiles').slideUp();
-				$('#profile-courses').slideDown();
-				bodyColor(green);
-			});
-			
-			$(shItem3).click(function() {
-			
-				$('.profiles').slideUp();
-				$('#profile-projects').slideDown();
-				bodyColor(blue);
-			});
-		};
-		
-		var bodyColor = function(color) {
-			$('body').css('background-color', color);
-		};
-		
-		var switchTo = function(firstSelector, secondSelector, color) {
-			$(firstSelector).css('background-color', 'white');
-			$(secondSelector).css('color', color);
-		};
-
-		$(document).ready(main);
 	</script>
   </body>
 </html>

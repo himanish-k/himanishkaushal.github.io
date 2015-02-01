@@ -1,0 +1,86 @@
+body {
+
+		}
+		
+		a .icon {
+			text-decoration: none;
+		}
+		
+		.icon-bar {
+			text-align: center;
+		}
+		
+		.jumbotron .icon {
+			background-color: #2F5168; 
+			color: white;
+		}
+		
+		.jumbotron .icon:hover {
+			color: #2F5168;
+			background-color: white;
+		}
+
+		.jumbotron {
+			background-color: #8edc9d;
+			margin-bottom:  0px;
+		}
+		
+		.jumbotron h1, .jumbotron p {
+			font-family: 'Poiret One', sans-serif;
+			color: white;
+			text-transform: uppercase;
+			text-align: center;
+		}
+		
+		#sub-header ul {
+			margin: 0px;
+		}
+
+		#sub-header li {
+			font-family: 'Poiret One', sans-serif;
+			font-weight: bold;
+			text-transform: uppercase;
+			text-align:center;
+			margin: 0px;
+		}
+
+		#sub-header a {
+			color: white;
+			text-decoration: none;
+		}
+		
+		#sub-header .col-md-4 {
+			padding: 25px 0px;
+			font-size: 2rem;
+		}
+
+		#sub-header .col-md-4:first-child, #profile-about {
+			background-color: #f97d81;
+		}
+
+		#sub-header .col-md-4:nth-child(2), #profile-courses {
+			background-color: #8edc9d;
+		}
+
+		#sub-header .col-md-4:nth-child(3), #profile-projects {
+			background-color: #2F5168;
+		}
+		
+		#active-profile {
+			font-family: 'Raleway', sans-serif;
+			color: white;
+			text-align: center;
+		}
+		
+		#active-profile h2 {
+			font-family: 'Poiret One', sans-serif;
+		}
+		
+		.profiles {
+			padding-bottom: 50px;
+		}
+		
+		.footer {
+			font-family: 'Raleway', sans-serif;
+			color: white;
+		}
