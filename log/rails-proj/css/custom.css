@@ -1,0 +1,13 @@
+
+
+body, h1, h2, a {
+	background-color: #2F5168;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	text-decoration: none;
+}
+
+h1 {
+	text-align: center;
+}
+
