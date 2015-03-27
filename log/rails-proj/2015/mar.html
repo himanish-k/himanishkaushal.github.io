@@ -3,8 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>MARCH 2015</title>
-		<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu:300' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="../../../bootstrap/css/bootstrap.min.css">
 		<link href="../../css/custom.css" rel="stylesheet" type="text/css">
 		<style type="text/css">
@@ -12,63 +11,58 @@
 		</style>
 	</head>
 	<body>
-		<div>
-			<h1>Rails Project</h1>
-			<h1>MARCH 2015</h1>
-		</div>
-		<div>
-			<p><a href="../../log.html">back</a></p>
-		</div>
 		<div class="container">
+			<div>
+				<h1>Rails Project</h1>
+				<h1>March 2015</h1>
+			</div>
+			<div>
+				<p><a href="../../log.html">back</a></p>
+			</div>
+			
 			<div class="row">
-				<h2>24 March</h2>
-				<div class="">
-					<ul>
-						<li>Ruby 2.2.1 installation</li>
-							<ul>
-								<li>Found instructions on gorails.com</li>
-								<li>Installing from source</li>
-									<ul><li>'gem install bundler' wouldn't install because of restrictions on permissions</li></ul>
-								<li>Installing through rbenv</li>
-									<ul><li>'rbenv install 2.2.1' would hang</li></ul>
-								<li>Installing through rvm</li>
-									<ul><li>Things worked out</li></ul>
-							</ul>
-						<li>Installation steps</li>
-						<ul>
-							<li>Follow instructions on gorails.com for Ubuntu 14.10</li>
-							<li>Basic Outline</li>
-							<ul>
-								<li>Install Ruby dependencies</li>
-								<li>Install Ruby through using rvm</li>
-								<li>Install Bundler</li>
-								<li>Install NodeJS</li>
-								<li>Install Rails</li>
-							</ul>
-						</ul>
-						<li>Need to understand what gems are all about</li>
-						<li>Should go through Ruby + Rails installation process again after installing Ubuntu on the machine
-								to better understand and remember each step</li>
-						<li>Gemfile</li>
-							<ul>
-								<li>Contains all supporting gems and the versions of the gems that should be downloaded</li>
-								<li>Contains few default gems and versions</li>
-								<li>Should be tweaked to reflect current app's needs</li>
-								<li>The 'bundle' of gems should then be installed</li>
-							</ul>
-						<li>Commands to create a basic app on a machine with Ruby + Rails installed (complete set-up)</li>
-							<!-- rearrange content so that code is not mixed with instructions, example is what you have done below -->
-							<div class="code">
-								<p>rails &#60version number&#62 new app_name</p>
-								<p>bundle install (after going to app directory)</p>
-								<p>rails server</p>
-								<p>(Then go to localhost:3000 and watch the app live)</p>
-							</div>
-					</ul>
+				<div class="date-heading">
+					<h2>27 March</h2>
+				</div>
+				<h3 style="text-transform: capitalize">Ruby on Rails app creation - a quick run through</h3>
+				<div>
+					<ol>
+						Steps:
+						<li>Create the new app.
+							<pre>
+	$ rails _&#60rails-version&#62_ new &#60app-name&#62
+							</pre>
+						</li>
+						<li>Update the Gemfile with the needed bundles and corresponding version numbers and categorize the bundles into groups.</li>
+						<li>Install the bundles. Generally you want save installing the bundles grouped under production for later (The production stage.).
+							<pre>
+	$ bundle install --without production
+							</pre>
+						</li>
+						<li>Initialize, add files to and commit to a local git repository.
+							<pre>
+	$ git init
+	$ git add -A
+	$ git commit -m "Initialized repository."
+							</pre>
+						</li>
+						<li>Create online repository on personal git account with the app-name.</li>
+						<li>Push the changes to the online git repository.
+							<pre>
+	$ git remote add origin git@github.com:&#60username&#62/&#60app-name&#62.git
+	$ git push -u origin --all
+							</pre>
+						</li>
+						<li>Create heroku repository and deploy app.
+							<pre>
+	$ heroku create
+	$ git push heroku master
+							</pre>
+						</li>
+					</ol>
 				</div>
 			</div>
-		</div>
-		<div class="container">
+		
 			<div class="row">
 				<h2>25 March</h2>
 			
@@ -170,6 +164,55 @@
 					</div>
 				</div>
 			</div>
+			
+			<div class="row">
+				<h2>24 March</h2>
+				<div class="">
+					<ul>
+						<li>Ruby 2.2.1 installation</li>
+							<ul>
+								<li>Found instructions on gorails.com</li>
+								<li>Installing from source</li>
+									<ul><li>'gem install bundler' wouldn't install because of restrictions on permissions</li></ul>
+								<li>Installing through rbenv</li>
+									<ul><li>'rbenv install 2.2.1' would hang</li></ul>
+								<li>Installing through rvm</li>
+									<ul><li>Things worked out</li></ul>
+							</ul>
+						<li>Installation steps</li>
+						<ul>
+							<li>Follow instructions on gorails.com for Ubuntu 14.10</li>
+							<li>Basic Outline</li>
+							<ul>
+								<li>Install Ruby dependencies</li>
+								<li>Install Ruby through using rvm</li>
+								<li>Install Bundler</li>
+								<li>Install NodeJS</li>
+								<li>Install Rails</li>
+							</ul>
+						</ul>
+						<li>Need to understand what gems are all about</li>
+						<li>Should go through Ruby + Rails installation process again after installing Ubuntu on the machine
+								to better understand and remember each step</li>
+						<li>Gemfile</li>
+							<ul>
+								<li>Contains all supporting gems and the versions of the gems that should be downloaded</li>
+								<li>Contains few default gems and versions</li>
+								<li>Should be tweaked to reflect current app's needs</li>
+								<li>The 'bundle' of gems should then be installed</li>
+							</ul>
+						<li>Commands to create a basic app on a machine with Ruby + Rails installed (complete set-up)</li>
+							<!-- rearrange content so that code is not mixed with instructions, example is what you have done below -->
+							<div class="code">
+								<p>rails &#60version number&#62 new app_name</p>
+								<p>bundle install (after going to app directory)</p>
+								<p>rails server</p>
+								<p>(Then go to localhost:3000 and watch the app live)</p>
+							</div>
+					</ul>
+				</div>
+			</div>
+			
 		</div>
 	</body>
 </html>

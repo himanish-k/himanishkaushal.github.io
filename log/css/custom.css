@@ -1,22 +1,19 @@
 
 
 body, h1, h2, a {
-	/*
-	background-color: #2F5168;
-	color: white; 
-	font-family: 'Raleway', sans-serif;
-	*/
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	background-color: #97282c;
+	color: white;
 	text-decoration: none;
+}
+
+pre {
+	background-color: #2d2d2d;
+	color: white;
 }
 
 h1 {
 	text-align: center;
-}
-
-h1, h2 {
-	/*
-	font-family: 'Poiret One', sans-serif;
-	*/
-	font-weight: normal;
 }
 
