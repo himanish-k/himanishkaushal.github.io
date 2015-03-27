@@ -8,6 +8,11 @@ body, h1, h2, a {
 	text-decoration: none;
 }
 
+a:hover, a:active {
+	text-decoration: none;
+	color: white;
+}
+
 pre {
 	background-color: #2d2d2d;
 	color: white;
