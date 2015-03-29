@@ -4,8 +4,8 @@
 		<meta charset="utf-8">
 		<title>MARCH 2015</title>
 		<link href='http://fonts.googleapis.com/css?family=Ubuntu:300' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="../../../bootstrap/css/bootstrap.min.css">
-		<link href="../../css/custom.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+		<link href="css/custom.css" rel="stylesheet" type="text/css">
 		<style type="text/css">
 			
 		</style>
@@ -14,10 +14,51 @@
 		<div class="container">
 			<div>
 				<h1>Rails Project</h1>
-				<h1>March 2015</h1>
 			</div>
 			<div>
-				<p><a href="../../log.html">back</a></p>
+				<p><a href="../index.html">back</a></p>
+			</div>
+			
+			<div class="row">
+				<div class="date-heading">
+					<h2>28 March</h2>
+				</div>
+				
+				<div>
+					<h3>Undoing Rails generated code</h3>
+					<p>The first line generates code/updates database whereas the second line removes generated code/reverts database changes</p>
+					<pre>
+	$ rails generate controller CertainObjects action1 action2
+	$ rails destroy controller CertainObjects action1 action2
+					</pre>
+					<pre>
+	$ bundles exec rake db:migrate
+	$ bundles exec rake db:rollback
+					</pre>
+				</div>
+				
+				<div>
+					<h3>Hypertext Transfer Protocol (HTTP) Operation Definitions</h3>
+					<p>There refer to operations between a client (running a browser such as Chrome) and a server (running a web server
+						 such as Apache, Nginx etc.).</p>
+					<ul>
+						<li>GET - most common; basically means 'get a page'.</li>
+						<li>POST - next most common; typically used to create things (update information).</li>
+						<li>PATCH - used to update information too, but apparently browsers are 'incapable'
+								of sending such requests natively.</li>
+						<li>DELETE - used to destroy data, but browsers are 'incapable' of sending such requests natively too.</li>
+					</ul>
+				</div>
+				
+				<div>
+					<h3>From a client's point: Adding a new page to the site</h3>
+					<ol>To add a new page:
+						<li>Add a route for that page in config/routes.rb .</li>
+						<li>Add the particular action to the controller (in app/controllers) responsible for the page.</li>
+						<li>Create a .html.erb file in app/views/&#60model-name&#62 with the required html page.</li>
+					</ol>
+				</div>
+				
 			</div>
 			
 			<div class="row">
