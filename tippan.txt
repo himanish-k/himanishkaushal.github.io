@@ -1,2 +1,15 @@
-udemy.com - online graphic design courses
-diveintohtml5.info - html5 blog 
+<!DOCTYPE html>
+<head>
+  <title>website memo</title>
+</head>
+<body>
+  <h3>Website memo</h3>
+  <ul>
+    <li><a href="www.udemy.com">udemy.com - online graphic design courses</a></li>
+    <li><a href="www.diveintohtml5.info">diveintohtml5.info - html5 blog</a></li>
+    <li><a href="http://codepen.io/">codepen.io - its got a variety of things for front-end design, especially loaders/spinners</a></li>
+  </ul>
+</body>
+</html>
+
+ 
