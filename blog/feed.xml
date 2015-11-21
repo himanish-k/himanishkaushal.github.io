@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>h*k</title>
+    <description>This blog is an attempt at a lifestyle change, a change long needed. It will witness life, code and football.
+</description>
+    <link>http://himanishkaushal.com/</link>
+    <atom:link href="http://himanishkaushal.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 21 Nov 2015 09:03:13 -0500</pubDate>
+    <lastBuildDate>Sat, 21 Nov 2015 09:03:13 -0500</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Hello, world?</title>
+        <description>&lt;p&gt;Hello, world!&lt;/p&gt;
+
+&lt;p&gt;This blog is part of an attempt at a lifestyle change, a change long-needed.&lt;/p&gt;
+
+&lt;p&gt;This blog will capture moments in my life through the lens of a wanna-be writer.
+This blog will see tutorials, bug fixes, framework/programming language adoption, 
+thought process while approaching a project, etc. This blog will see the 
+Madridista and football enthusiast in me through rants and match analyses.&lt;/p&gt;
+
+&lt;p&gt;This blog will see a lot, and I hope in this process it witnesses my life turn sharp.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 21 Nov 2015 07:43:11 -0500</pubDate>
+        <link>http://himanishkaushal.com/jekyll/update/2015/11/21/hello-world.html</link>
+        <guid isPermaLink="true">http://himanishkaushal.com/jekyll/update/2015/11/21/hello-world.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+  </channel>
+</rss>
